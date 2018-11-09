@@ -1,0 +1,15 @@
+5. Intersect
+
+Develop a function that takes two or more arrays as input, and returns a new array that contains the intersection of the inputs. For example, suppose the function is called like this:
+
+var intersect_list = intersect(['foo', 'bar', 29, 1, 38, 19, 249], ['foo', 38, 2, 19, 3, 20], [1,2,3,4,38,'foo', 38, 19]);
+
+then the returned intersect_list should be ['foo', 38, 19].
+
+The “intersect” function can accept any number of input arrays, so if called like this:
+
+var intersect_list = intersect([3,4,3,29,492,23,5],[1,2,3,4,5,6,10,19],[5,4,29]);
+
+then the returned intersect_list should be [4,5].
+
+To demonstrate and test your function, create a simple html page with 5 text inputs and a button.  When the button is clicked, your page should use "split" to convert each text field to an array, then call your intersect function and display the results.
