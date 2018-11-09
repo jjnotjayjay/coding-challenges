@@ -1,0 +1,11 @@
+6. Randomize List
+
+Write a function to take an input array with arbitrary number of inputs, and return a new array with the same items, but in a random order.
+
+For example, if called like this:
+
+var random_list = randomizeList([1,2,3,4,49,'foo',38,'bar',9,-1]);
+
+then the returned random_list might be this [4,1,3,-1,'foo',38,9,2,49,'bar']. Every time the function is called it should return a different random order (unless subsequent calls return the same order by chance).
+
+Create a simple user interface in the html page – a single text input that accepts a comma-separated list.  Then also add a button that triggers the function. Use the javascript "split" function to create an array from the text, call your randomizeList function, then write out the results to some other place on the page.
