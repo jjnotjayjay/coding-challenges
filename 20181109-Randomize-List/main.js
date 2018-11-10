@@ -10,3 +10,11 @@ function randomizeList(list) {
 
   return randomList
 }
+
+const $list = document.getElementById('list')
+const $submit = document.getElementById('submit')
+const $result = document.getElementById('result')
+
+$submit.addEventListener('click', () => {
+  $result.textContent = randomizeList($list.value.split(', '))
+})
