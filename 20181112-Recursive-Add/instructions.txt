@@ -1,0 +1,9 @@
+7. Recursive add from 1 to N
+
+Write a recursive function to sum the numbers from 1 to an input N.  For example, the function should return 15 for the input 5 (1+2+3+4+5).  Make sure the function is recursive (that is, it must call itself), even though this is not the most efficient way to do this particular calculation.
+
+Then create a simple html page with a input text field and a button.  When the button is clicked, run the addition function on the input, and display the result if the input is a number.
+
+8. Calculated sum from 1 to N
+
+Create a new copy of the page for the prior exercise, but instead of using recursion, calculate the result using simple arithmetic
