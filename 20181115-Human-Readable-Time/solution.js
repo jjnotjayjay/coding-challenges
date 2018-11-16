@@ -3,5 +3,9 @@ function humanReadable(seconds) {
   let minutes = Math.floor((seconds - (hours * 3600)) / 60)
   let _seconds = seconds % 60
 
-  return ('00' + hours).slice(-2) + ':' + ('00' + minutes).slice(-2) + ':' + ('00' + _seconds).slice(-2)
+  function padTwo(input) {
+    return ('00' + input).slice(-2)
+  }
+
+  return padTwo(hours) + ':' + padTwo(minutes) + ':' + padTwo(_seconds)
 }
