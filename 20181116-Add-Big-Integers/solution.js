@@ -10,8 +10,8 @@ function sumStrings(a,b) {
     sum >= 10
       ? carry = 1
       : carry = 0
-    if (!aDigits.length && !bDigits.length && carry) sumDigits.unshift(1)
   }
+  if (carry) sumDigits.unshift(1)
 
   return sumDigits.join('').replace(/^0+/g, '')
 }
