@@ -1,0 +1,1 @@
+Given a set of points on the coordinate plane and an integer K, write a function that returns the K closest points to the origin.
