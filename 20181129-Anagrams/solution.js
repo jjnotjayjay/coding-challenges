@@ -1,3 +1,4 @@
 function anagrams(word, words) {
-  return words.filter(el => word.split('').sort().join('') === el.split('').sort().join(''))
+  const sortedWord = word.split('').sort().join('')
+  return words.filter(el => sortedWord === el.split('').sort().join(''))
 }
