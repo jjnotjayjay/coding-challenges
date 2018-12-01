@@ -1,17 +1,11 @@
 function rot13(message){
-  const lowerAlphabet = 'abcdefghijklmnopqrstuvwxyz'
-  const upperAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  const extendedAlphabet = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM'
   let output = ''
 
   for (let char of message) {
-    let lowerCharIndex = lowerAlphabet.indexOf(char)
-    let upperCharIndex = upperAlphabet.indexOf(char)
-
-    if (lowerCharIndex !== -1) {
-      output += lowerAlphabet.charAt((lowerCharIndex + 13) % 26)
-    }
-    else if (upperCharIndex !== -1) {
-      output += upperAlphabet.charAt((upperCharIndex + 13) % 26)
+    let charIndex = extendedAlphabet.indexOf(char)
+    if (charIndex !== -1) {
+      output += extendedAlphabet.charAt(charIndex + 13)
     }
     else {
       output += char
