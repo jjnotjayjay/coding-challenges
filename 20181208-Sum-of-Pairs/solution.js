@@ -1,9 +1,9 @@
 var sum_pairs=function(ints, s){
+  let nums = {}
   for (let j = 1; j < ints.length; j++) {
-    for (let i = 0; i < j; i++) {
-      if (ints[i] + ints[j] === s) {
-        return [ints[i], ints[j]]
-      }
+    nums[ints[j - 1]] = true
+    if (nums[s - ints[j]]) {
+      return [s - ints[j], ints[j]]
     }
   }
   return undefined
